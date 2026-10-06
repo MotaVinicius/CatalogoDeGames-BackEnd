@@ -11,7 +11,7 @@ app.use(logger('dev'));
 app.use(express.json());
 const port = process.env.PORT || 3333 ;
 
-mongoose.connect('mongodb+srv://motavinicius:Aguia999*@catalogogames-api.1b1fxq3.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('key_mongodb_connection');
 
 const Game = mongoose.model('Game', {
      name: String,
